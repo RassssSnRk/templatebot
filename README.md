@@ -15,10 +15,10 @@ If DPP is installed in a different location you can specify the root directory t
 
 ## Running the template bot
 
-Create a config.json in the directory above the build directory:
+Edit /src/main.cpp : replace <your_bot_token>  with your bot token
 
-```json
-{ "token": "your bot token here" }
+```c++
+const std::string bot_token = "<your_bot_token>";
 ```
 
 Start the bot:
