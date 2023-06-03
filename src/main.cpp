@@ -6,16 +6,12 @@
  * https://discord.com/oauth2/authorize?client_id=940762342495518720&scope=bot+applications.commands&permissions=139586816064
  */
 
-using json = nlohmann::json;
+const std::string bot_token = "<your_bot_token>";
 
 int main(int argc, char const *argv[])
 {
-    json configdocument;
-    std::ifstream configfile("../config.json");
-    configfile >> configdocument;
-
-    /* Setup the bot */
-    dpp::cluster bot(configdocument["token"]);
+      /* Setup the bot */
+    dpp::cluster bot(bot_token);
 
     /* Output simple log messages to stdout */
     bot.on_log(dpp::utility::cout_logger());
