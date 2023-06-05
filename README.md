@@ -3,7 +3,14 @@
 CMake template for a simple [D++](https://dpp.dev) bot. This template assumes that D++ is already installed.
 
 ## Compilation
+1. Edit /src/main.cpp : replace <your_bot_token>  with your bot token
 
+```c++
+const std::string bot_token = "<your_bot_token>";
+```
+
+2. Run the following codes : 
+    
     mkdir build
     cd build
     cmake ..
@@ -14,12 +21,6 @@ If DPP is installed in a different location you can specify the root directory t
     cmake .. -DDPP_ROOT_DIR=<your-path>
 
 ## Running the template bot
-
-Edit /src/main.cpp : replace <your_bot_token>  with your bot token
-
-```c++
-const std::string bot_token = "<your_bot_token>";
-```
 
 Start the bot:
 
