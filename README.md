@@ -11,10 +11,10 @@ const std::string bot_token = "<your_bot_token>";
 
 2. Run the following codes : 
     
-    mkdir build
-    cd build
-    cmake ..
-    make -j
+    mkdir build  
+    cd build  
+    cmake ..  
+    make -j  
 
 If DPP is installed in a different location you can specify the root directory to look in while running cmake 
 
